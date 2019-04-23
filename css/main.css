@@ -1,9 +1,28 @@
+/* section body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.75;
+    letter-spacing: 1px;
+    background-color: #fff;
+    color: #484848;
+}
 body,html{
     height: 100%;
     margin:0 auto;
 }  
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+ul {
+  list-style: none;
+}
 .section1 { 
-    background: url(../img/maxresdefault.jpg);
+    background: url(../img/maxresdefault.png);
     background-attachment: fixed;
     background-color: #000;
     background-position: 50% 0;
@@ -17,68 +36,531 @@ body,html{
     text-align: center;
     width: 100%;
  }
+
 .widget{
-    padding:50px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 20px;
+    z-index: 5;
 }
 .gambartengah{
-    border: 5px solid #fff;
-    border-radius: 50%;
+    border-radius: 100%;
+    border: 8px solid rgba(255,255,255,.5);
+    margin-bottom: 10px;
 }
 
-.judul {
-    font-family: 'Source Sans Pro', sans-serif;
+.judul h3 {
+    font-family: "Montserrat";
+    color: #fff;
     font-size: 50px;
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    letter-spacing: 30px;
-    padding: 15px 0px 0px;
+    font-weight: 300;
      }
+.judul h3 span {
+    font-weight: 500;
+    color: #E3872D;
+}
 .intro{
-    font-size: 17px;
     text-align: center;
     color: white;
     width: 50%;
-    margin: auto
+    margin: auto;
+    font-size: 22px;
+    text-transform: uppercase;
 }
 .section2{
-    padding:100px 100px;
-    background-color: gainsboro;
+    padding:100px 0px;
+    background-color: white;
 }
 .about {
-    font-family: arial;
-    font-size:30px;  
+    font-family: inherit;
+    font-size:26px;  
     font-weight:700;
+}
+.about p {
+    margin-bottom: 16px;
+}
+.getin {
+    color:white;
+    font-family: inherit;
+    font-size:26px;  
+    font-weight:700;
+}
+.desk span {
+    font-weight: 700;
+    color: white;
+    float: left;
+    margin-right: 5px;
+}
+.desk {
+    color:white;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 30px;
 }
 .col-kiri{
         text-align: justify;
 }
-.col-kanan{
-    padding: 25px 20px;
-    text-align: center;
+.col-kanan {max-width: 44%
 }
-.section3{
-    padding:100px 100px;
-    background-color: goldenrod;
+
+.section6{
+    padding:100px 0px;
+    background-color: #E3872D;
 }
 .logo{
     font-size: 200px;
     color: azure;
-    margin: -100px 0px;
+    margin: -85px 0px;
     text-align: center;
 }
 .footer{
-    background-color: black;
+    background-color: #041230;
     text-align: center;
     color:white;
-    padding: 10px 10px;
+    padding: 50px 0;
     font-size: 13px;
 }
 .link {
     padding : 10px 15px;
     color:currentColor;
 }
-.link:hover{
-    background: goldenrod;
+.navbar-nav a{
+    color: #ddd;
+    position: relative;
+    text-decoration-line: none;    
+}
+.navbar-nav a:hover{
+    color:#ddd;
+    text-decoration: none;
+}
+.fixed-top {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 20;
+   -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out; 
+}
+.nav-sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #fff !important;
+    padding: 6px 0 !important;
+    border-bottom: 1px solid #f0f0f0;
+}
+.nav-sticky a {
+    color:#232323;
+}
+.nav-sticky a:hover{
+    color:#232323;
+}
+.navbar-nav a:after {
+	content: "";
+	display: none;
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 6px;
+	left: 10%;
+	background-color: #ddd;
+	-webkit-transition: all .28s ease-in-out;
+	-o-transition: all .28s ease-in-out;
+	-moz-transition: all .28s ease-in-out;
+	transition: all .28s ease-in-out;
+}
+.navbar-nav a:hover,
+.navbar-nav a.active {
+	background-color: transparent;
+}
+.navbar-nav a:hover:after,
+.navbar-nav a.active:after {
+	width: 80%;
+}
+.navbar-nav a:focus {
+	background-color: transparent;
+}
+.nav-sticky a:after {
+	background-color: #dddf;
+}
+
+.col-left ul li {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}
+.col-left ul li span {
+	font-weight: 700;
+	color: #232323;
+    float: left;
+    margin-right: 5px;
+}
+.col-left ul li span i {
+	margin-right: 4px;
+}
+.col-left ul li span p {
+	font-size: 12px;
+    float: left;
+}
+.col-right ul li {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}
+.col-right ul li span {
+	font-weight: 700;
+	color: #232323;
+    float: left;
+    margin-right: 5px;
+}
+.col-right ul li span i {
+	margin-right: 4px;
+}
+.col-right ul li span p {
+	font-size: 12px;
+    float: left;
+}
+.medsos {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.medsos li {
+	display: inline-block;
+	margin: 4px;
+}
+.medsos li a {
+	display: inline-block;
+	font-size: 16px;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	line-height: 36px;
+	color: #232323;
+	border: 1px solid #888;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.medsos li:hover a {
+	color: #fafafa;
+	background-color: #232323;
+	border-color: transparent;
+}
+.efek {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.keterampilan {
+	padding: 20px 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.skillbar {
+position:relative;
+display:block;
+margin-bottom:15px;
+width:100%;
+background:#dfdfdf;
+height:6px;
+border-radius: 12px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+-webkit-transition:0.4s linear;
+-moz-transition:0.4s linear;
+-ms-transition:0.4s linear;
+-o-transition:0.4s linear;
+transition:0.4s linear;
+-webkit-transition-property:width, background-color;
+-moz-transition-property:width, background-color;
+-ms-transition-property:width, background-color;
+-o-transition-property:width, background-color;
+transition-property:width, background-color;
+}
+.skillbar-title {
+position:absolute;
+top:0;
+left:0;
+font-weight:bold;
+font-size:13px;
+color:#fff;
+background:#6adcfa;
+-webkit-border-top-left-radius:3px;
+-webkit-border-bottom-left-radius:4px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-bottomleft:3px;
+border-top-left-radius:3px;
+border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+display:block;
+background:rgba(0, 0, 0, 0.1);
+padding:0 20px;
+height:35px;
+line-height:35px;
+-webkit-border-top-left-radius:3px;
+-webkit-border-bottom-left-radius:3px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-bottomleft:3px;
+border-top-left-radius:3px;
+border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+height:6px;
+width:0px;
+border-radius: 12px;
+background:#4f4f4f;
+border-radius:3px;
+-moz-border-radius:3px;
+-webkit-border-radius:3px;
+}
+
+.persentase {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+.keahlian {
+    display: inline-block;
+    margin-left: 8px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.section3 {
+    padding:100px 0px;
+    background-color: #fafafa;
+}
+.section4 {
+    padding:100px 0px;
+    background-color: #fafafa;
+}
+.section4 { 
+    background: url(../img/medal.jpg);
+    background-attachment: fixed;
+    background-color: #000;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: table;
+    height: 75%;
+    overflow: hidden;
+    padding: 100px 0;
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+ }
+.section5 {
+    padding:100px 0px;
+    background-color: white;
+}
+.judul-section { display: block;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.judul-section h2 {
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 24px;
+    line-height: 30px;
+    padding-bottom: 5px;
+    display: inline-block;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+.judul-section h2:before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #E3872D;
+}
+.tanggal {
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 15px;
+    color: #777777;
+}
+
+.isinya{
+    position: relative;
+    }
+.isinya:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 2px;
+    background-color: #eeeeee;
+    height: calc(100% + 0px);
+    left: calc(-50px + 6px);
+}
+.isinya:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #E3872D;
+    left: -50px;
+}
+.isinya h4{
+    font-family: inherit;
+    font-size: 20px;
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.isinya h5{
+    font-family: inherit;
+    font-size: 18px;
+}
+.tombol{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+			box-sizing: border-box; /* Opera/IE 8+ */
+}
+.tombol ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.tombol ul li{
+	margin: 0px 30px 10px 0px;
+	float: left;
+}
+.tombol ul li:last-child{margin-right: 0px;}
+.tombol ul li a span{
+	position: relative;
+	z-index: 2;
+}
+.tombol ul li a{
+	text-decoration: none;
+    color: #fff;
+    background-color: #E3872D;
+    font-weight: 600;
+    padding: 5px 35px;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;;
+}
+.tombol ul li a:before{
+	position: absolute;
+    content: "";
+    top: 0px;
+    height: 100%;
+    left: -25%;
+    width: 0%;
+    background-color: #041230;
+    transform: skew(50deg);
+    transition-duration: .6s;
+    z-index: 1;
+}
+.tombol ul li a:hover:before{width: 180%;}
+.prestasi h2 {
+    letter-spacing: 2.3px;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+
+}
+.piala {
+    margin-bottom: 20px;
+}
+.prestasi p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.row form {
+    width: 100%;
+}
+.row form a {
+    color:white;
+    font-size: 13px;
+}
+.form-email a input, .form-email a textarea {
+    padding: .375rem .75rem;
+    width: 100%;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1.4px;
+    margin-bottom: 10px;
+    height: 45px;
+}
+.textarea-box{
+        height: 100px;
+}
+.tombol-kirim input {
+    text-decoration: none;
+    color: #fff;
+    background-color: #041230;
+    font-weight: 600;
+    padding: 5px 60px;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+.tombol-kirim input:before {
+	position: absolute;
+    content: "";
+    top: 0px;
+    height: 100%;
+    left: -25%;
+    width: 0%;
+    background-color: #E3872D;
+    transform: skew(50deg);
+    transition-duration: .6s;
+    z-index: 1;
+}
+.tombol-kirim input:hover:before{
+    width: 170%;
     color:white
 }
+.klik {
+    border:none;
+}
+.tombol-kirim input {
+    
+}
+input[type="text"] {
+    color:white}
